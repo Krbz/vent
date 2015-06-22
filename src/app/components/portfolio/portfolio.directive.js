@@ -3,14 +3,14 @@
 
   angular
     .module('vent')
-    .directive('navbar', navbar);
+    .directive('project', project);
 
   /** @ngInject */
-  function navbar() {
+  function project() {
     var directive = {
-      restrict: 'A',
-      templateUrl: 'app/components/navbar/navbar.html',
-      controller: NavbarController,
+      restrict: 'E',
+      templateUrl: 'app/components/portfolio/portfolio.html',
+      controller: ProjectController,
       controllerAs: 'self',
       bindToController: true
     };
@@ -18,8 +18,9 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController() {
+    function ProjectController() {
       var self = this;
+      
     }
   }
 
