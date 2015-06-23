@@ -1,0 +1,68 @@
+.black {
+	.about {
+		color: #fff;
+	}
+}
+.about {
+	> div {
+		padding: 100px 0;
+		width: 70%;
+		h2 {
+			margin: 35px 0px;
+		}
+		div.column-7 {
+			width: 70%;
+			display: inline-block;
+			div.skill {
+				display: block;
+				p, i, div {
+					display: inline-block;
+				}
+				p {
+					width: 100px;
+				}
+				i {
+					width: 30px;
+					margin: 0 15px;
+				}
+				div {
+					width: 50%;
+					height: 10px;
+					border: 1px solid #ccc;
+					position: relative;
+					border-radius: 5px 5px;
+					span {
+						background: #fda;
+						position: absolute;
+						left: 0;
+						top: 0;
+						height: 10px;
+						width: 50%;
+					}
+				}
+			}
+		}
+		div.column-2 {
+			width: 20%;
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			text-align: center;
+			padding: 25px 0;
+			a.btn {
+				margin-top: 50px;
+				background: #fda;
+				padding: 10px 35px;
+				color: #fff;
+			}
+			a.switcher {
+				position: absolute;
+				right: -200px;
+				bottom: -150px;
+				width: 100px;
+				height: 40px;
+				border: 1px solid #ccc;
+			}
+		}
+	}
+}

@@ -20,13 +20,13 @@
       })
       .state('offer', {
         url: '/offer',
-        templateUrl: 'app/contact/contact.html',
+        templateUrl: 'app/offer/offer.html',
         controller: 'OfferController',
         controllerAs: 'offer'
       })
       .state('about', {
         url: '/about',
-        templateUrl: 'app/contact/about.html',
+        templateUrl: 'app/about/about.html',
         controller: 'AboutController',
         controllerAs: 'about'
       })

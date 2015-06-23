@@ -1,20 +1,45 @@
 <div class="container">
+<!--http://sarahcapecci.com/blog/processing-a-form-with-angularjs-php/  -->
 
-  <nav navbar class="navbar"></nav>
+    <nav navbar class="navbar"></nav>
+    
+    <section class="row">
+        <div class="errorContainer success">
+            <p>Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit. Cumque, cum.</p>
+            <i class="fa fa-times"></i>
+        </div>
+    
+        <form ng-submit="submitForm()" novalidate>
+            <div>
+              <label for="firstname">Imie</label>
+              <input type="text" name="firstname" ng-model="formData.firstname" ng-class="{'error' : errorFirstname}">
+            </div>
+            <div>
+              <label for="surname">Nazwisko</label>
+              <input type="text" name="surname" ng-model="formData.surname" ng-class="{'error' : errorSurname}">
+            </div>
+            <div>
+              <label for="number">Numer telefonu</label>
+              <input type="number" name="number" ng-model="formData.number" ng-class="{'error' : errorNumber}">
+            </div>
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" name="email" ng-model="formData.email" ng-class="{'error' : errorEmail}">
+            </div>
+            <div>
+              <label for="message">Wiadomość</label>
+            </div>
+            <textarea name="message" ng-class="{'error' : errorTextarea}" ng-model="formData.message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send!" name="submit">
+        </form>
+        <div>
+            <img src="" alt="1">
+            <img src="" alt="2">
+            <img src="" alt="3">
+        </div>
+    </section>
 
-  <div class="jumbotron">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      Always a pleasure scaffolding your apps.
-    </p>
-    <p class="animated infinite" ng-class="main.classAnimation">
-      <a class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</a>
-    </p>
-    <p>
-      With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']" />
-    </p>
-  </div>
+ <footer class="row"></footer>
 
 
 </div>
