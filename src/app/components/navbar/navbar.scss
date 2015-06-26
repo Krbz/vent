@@ -6,7 +6,7 @@
 
 .navbar {
   position: relative;
-  min-height: 50px;
+  max-height: 50px;
   background-color: #eee;
   color: #333;
   margin-bottom: 2px;
@@ -21,6 +21,7 @@
 	ul {
 		display: inline-block;
 		vertical-align: top;
+		margin-top: 15px;
 		li {
 			display: inline-block;
 			position: relative;

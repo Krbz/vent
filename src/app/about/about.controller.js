@@ -6,15 +6,17 @@
     .controller('AboutController', AboutController);
 
     function AboutController() {
-
+      var switcherValue = false;    
     	document.querySelector('.switcher').addEventListener('click', function(){
-        var switcherValue = false;    
+        
 
     		switcherValue = !switcherValue;
 	    	if (switcherValue) {
-	    		document.querySelector('.container').classList.add("black");
+	    		document.querySelector('body').classList.add("black");
 	    	} else {
-	    		document.querySelector('.container').classList.remove("black");    		
+	    		document.querySelector('body').classList.remove("black");          
+          document.querySelector('body').classList.add("white");
+   		
 	    	}
 
     	})
