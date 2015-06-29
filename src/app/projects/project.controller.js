@@ -3,22 +3,24 @@
 
   angular
     .module('vent')
-    .directive('project', project);
+    .controller('ProjectController', ProjectController)
+    .directive('projects', projects)
 
   /** @ngInject */
-  function project() {
+  function ProjectController($scope, $stateParams, mainData) {
+    $scope.index = $stateParams.index;
+
+    return mainData;
+  }
+
+  function projects() {
     var directive = {
       restrict: 'A',
       templateUrl: 'app/components/portfolio/portfolio.html',
-      controller: portfolio,
-      controllerAs: 'self',
       bindToController: true
     };
 
     return directive;
-  }
-  function portfolio() {
-
   }
 
 })();

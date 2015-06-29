@@ -9,7 +9,6 @@
   function MainController($timeout, mainData) {
     var self = this;
 
-
     self.datas = [];
 
     function getData() {

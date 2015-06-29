@@ -18,6 +18,12 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .state('details', {
+        url: '/project:index',
+        templateUrl: 'app/projects/project.html',
+        controller: 'ProjectController',
+        controllerAs: 'project'
+      })
       .state('offer', {
         url: '/offer',
         templateUrl: 'app/offer/offer.html',
@@ -36,9 +42,13 @@
         controller: 'ContactController',
         controllerAs: 'contact'
       })
+      .state('404', {
+        url: '/404',
+        templateUrl: 'app/errors/404.html'
+      })
 
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/404');
   }
 
 })();

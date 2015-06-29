@@ -2,7 +2,7 @@
   <nav navbar class="navbar"></nav>
 
   <section>
-    <project ng-repeat="data in main.datas" class="col"></project>
+    <a ui-sref="details({index: $index})" project ng-repeat="data in main.datas" class="col"></a>
   </section>
 
   <footer></footer>

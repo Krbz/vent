@@ -1,10 +1,10 @@
-<img class="logo" src="assets/images/angular.png" alt="">
+<a href="/"><img class="logo" src="assets/images/angular.png" alt=""></a>
 <ul class="navigation">
-	<li><a><i class="fa fa-bars"></i></a></li>
-	<li><a href="/">Projekty</a></li>
-	<li><a href="/offer">Oferta</a></li>
-	<li><a href="/about">O mnie</a></li>
-	<li><a href="/contact">Contact</a></li>
+	<li class="show-for-small"><a><i class="fa fa-bars"></i></a></li>
+	<li><a ui-sref-active="active" ui-sref="home">Projekty</a></li>
+	<li><a ui-sref-active="active" ui-sref="offer">Oferta</a></li>
+	<li><a ui-sref-active="active" id="omnie" ui-sref="about">O mnie</a></li>
+	<li><a ui-sref-active="active" ui-sref="contact">Contact</a></li>
 </ul>
 
 <ul class="social">

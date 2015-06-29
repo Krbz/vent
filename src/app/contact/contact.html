@@ -6,30 +6,39 @@
     <section class="row">
         <div class="errorContainer fa success">
             <p>Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit. Cumque, cum.</p>
+            <i class="fa close"></i>
         </div>
-    
+        <div class="errorContainer fa error">
+            <p>Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit. Cumque, cum.</p>
+            <i class="fa close"></i>
+        </div>
+
+        <h2>Napisz do mnie, na pewno się odezwę</h2>
+
         <form ng-submit="submitForm()" novalidate>
             <div>
               <label for="firstname">Imie</label>
-              <input type="text" name="firstname" ng-model="formData.firstname" ng-class="{'error' : errorFirstname}">
+              <input type="text" placeholder="Al" name="firstname" ng-model="formData.firstname" ng-class="{'error' : errorFirstname}">
             </div>
             <div>
               <label for="surname">Nazwisko</label>
-              <input type="text" name="surname" ng-model="formData.surname" ng-class="{'error' : errorSurname}">
+              <input type="text" placeholder="Bundy" name="surname" ng-model="formData.surname" ng-class="{'error' : errorSurname}">
             </div>
             <div>
-              <label for="number">Numer telefonu</label>
-              <input type="number" name="number" ng-model="formData.number" ng-class="{'error' : errorNumber}">
+              <label for="tel">Numer telefonu</label>
+              <input type="tel" placeholder="123-132-333" name="tel" ng-model="formData.number" ng-class="{'error' : errorNumber}">
             </div>
             <div>
               <label for="email">E-mail</label>
-              <input type="email" name="email" ng-model="formData.email" ng-class="{'error' : errorEmail}">
+              <input type="email" placeholder="al.bundy@bundy.com" name="email" ng-model="formData.email" ng-class="{'error' : errorEmail}">
             </div>
             <div>
               <label for="message">Wiadomość</label>
             </div>
-            <textarea name="message" ng-class="{'error' : errorTextarea}" ng-model="formData.message" cols="30" rows="10"></textarea>
-            <input type="submit" value="Send!" name="submit">
+            <textarea name="message" placeholder="Feel free to take my money! 
+            
+            regards Al Bundy" ng-class="{'error' : errorTextarea}" ng-model="formData.message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Wyślij" name="submit">
         </form>
         <div>
             <img src="" alt="1">

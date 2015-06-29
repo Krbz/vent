@@ -1,0 +1,45 @@
+<div class="container">
+  <nav navbar class="navbar"></nav>
+
+  <div class="row project">
+  	<div>
+  		<header>
+  			<h1>{{project[index].title}}</h1>
+  			<p>{{project[index].short}}</p>
+  			<p><span>{{project[index].date}}</span></p>
+	  		<div class="watchers">
+	  			<span><i class="fa fa-thumbs-up"></i>{{project[index].score.likes}}</span>
+	  			<span><i class="fa fa-comment"></i>{{project[index].score.comments}}</span>
+	  		</div>
+  			<div class="tags">
+  				<p><span ng-repeat="tag in project[index].tags">{{tag}}</span></p>  				
+  			</div>
+  		</header>
+  		<section>
+  			<p class="desc">
+  				{{project[index].description}}
+  			</p>
+  			<img class="gallery" ng-repeat="img in project[index].imgs" src="assets/images/{{img}}">
+  		</section>
+  		<div class="social">
+  			
+  		</div>
+  	</div>
+	<aside>
+		<h2>Project by:</h2>
+
+		<div>
+			<img ng-src="assets/images/{{project[index].logo}}" alt="{{project[index].title}}">
+			<div>
+				<h3>Vent</h3>
+				<a href="/"><p><i class="fa fa-map-marker"></i> Warsaw, Poland</p></a>
+			</div>
+		</div>
+		<a href="/contact" class="btn"><i class="fa fa-plus"></i>Follow</a>
+		<a href="/contact" class="btn"><i class="fa fa-comment"></i>Kontakt</a>
+	</aside>
+  </div>
+
+  <footer></footer>
+
+</div>

@@ -13,14 +13,21 @@
 	position: relative;
 	margin: 15px 10px;
 	padding: 10px 20px;
-	&:after {
-		content: "\f00d";
+	.close {
 		position: absolute;
 		right: 15px;
-		top: 10px;  
+		top: 10px; 
+		cursor: pointer;
+	&:before {
+		content: "\f00d";
+	}
 	}
 }
 .row {
+	h2 {
+		margin: 50px 10px;
+		font-size: 1.5em;
+	}
 	form {
 		width: 50%;
 		text-align: left;
@@ -48,6 +55,15 @@
 			display: block;
 			padding: 20px 20px;
 			resize: none;
+		}
+		input[type="submit"] {
+			margin: 10px 10px;
+			padding: 5px 25px;
+			font-size: 1em;
+			border: none;
+			outline: none;
+			background: #fda;
+			color: #fff;
 		}
 	}
 }

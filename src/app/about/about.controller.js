@@ -6,6 +6,7 @@
     .controller('AboutController', AboutController);
 
     function AboutController() {
+
       var switcherValue = false;    
     	document.querySelector('.switcher').addEventListener('click', function(){
         
