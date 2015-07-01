@@ -194,7 +194,7 @@ div.buttons {
       }
     }
   }
-  .row {
+  .row.contact {
     form {
       width: 100%;
       div {
@@ -202,7 +202,7 @@ div.buttons {
         margin: 10px 0;
         input {
           width: 100%;
-          font-size: 1.5em;
+          font-size: 1.2em;
           padding: 2px 5px;
         }
       }
@@ -213,6 +213,34 @@ div.buttons {
         height: 200px;
         font-size: 2em;
       }
+    }
+  }
+  .row.offer {
+    > div {
+      width: 100%;
+      display: block;
+      div.buttons {
+        text-align: center;
+        width: 100%;
+        padding: 0 0;
+        a.btn {
+        }
+      }
+
+    }
+    div.content {
+      width: 90%;
+      margin: 0px auto;
+    }
+  }
+  .row.project {
+    margin: 80px auto 0 auto;
+    > div {
+      border: none;
+      width: 90%;
+    }
+    aside {
+      display: none;
     }
   }
   footer.row {
