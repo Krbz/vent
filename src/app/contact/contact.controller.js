@@ -53,7 +53,7 @@
 		for (var i=0; i < close.length; i++) {
 			close[i].addEventListener('click', function() {
 				var parent = this.parentElement;
-				parent.remove();
+				parent.parentNode.removeChild(parent);
 
 			})
 		}

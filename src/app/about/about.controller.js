@@ -6,10 +6,17 @@
     .controller('AboutController', AboutController);
 
     function AboutController() {
+      var skill = document.querySelectorAll('.skill');
+
+      for (var i=0; i < skill.length; i++) {
+        var percent = skill[i].querySelector('i').getAttribute('data-percent');
+        skill[i].querySelector('div span').style.width = percent + '%';
+      }
+      
+
 
       var switcherValue = false;    
     	document.querySelector('.switcher').addEventListener('click', function(){
-        
 
     		switcherValue = !switcherValue;
 	    	if (switcherValue) {

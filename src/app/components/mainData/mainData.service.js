@@ -21,7 +21,7 @@
         },
         'tags': ['tag1', 'tag2', 'tag3'],
         'imgs': [
-        'angular.png', 'gulp.png'  
+        'angular.png', 'gulp.png'
         // 'project_1_01.png'
         ]
       },

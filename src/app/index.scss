@@ -110,6 +110,7 @@ div.buttons {
 .navbar ul li a.active {
   color: #000 !important;
   font-weight: 800 !important;
+  border-bottom: 3px solid #333;
 }
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
    all your sass files automatically */
@@ -119,7 +120,7 @@ div.buttons {
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) and (max-width: 480px) {
  section {
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     .col {
       width: 100%;
       margin: 2px auto;
@@ -141,12 +142,12 @@ div.buttons {
         &:first-child {
           display: none;
         }
+        .active {
+          border-bottom: 3px solid #333;
+        }
         a {
           padding: 0px 5px 5px 5px;
           font-weight: 800;
-          .active {
-            border-bottom: 3px solid #333;
-          }
           &:hover {
             border-bottom: 3px solid #333;
           }
@@ -159,7 +160,7 @@ div.buttons {
   }
   .row {
     width: 95%;
-    margin: 80px auto;
+    margin: 80px auto 0;
   }
   .about {
     > div {
@@ -213,6 +214,10 @@ div.buttons {
         font-size: 2em;
       }
     }
+  }
+  footer.row {
+    margin: 0px auto;
+    padding: 10px 0;
   }
 }
 
