@@ -118,7 +118,146 @@ div.buttons {
 // endinjector
 
 /* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) and (max-width: 480px) {
+@media only screen and (min-width : 320px) and (max-width: 440px) {
+section {
+    margin: 50px auto 0 auto;
+    .col {
+      width: 100%;
+      margin: 2px auto;
+    }
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 50px; 
+    img.logo {
+      width: 35px;
+      display: inline-block;
+      margin: 10px 0 0 0;
+    }    
+    .navigation {
+      margin: 15px 0px 0px 0;
+      display: inline-block;
+      li {
+        .active {
+          border-bottom: 3px solid #333;
+        }
+        a {
+          padding: 0px 4px 10px 4px;
+          font-weight: 800;
+          &:hover {
+            border-bottom: 3px solid #333;
+          }
+        }
+      }
+    }
+    .social {
+      display: none;
+    }
+  }
+  .row {
+    width: 95%;
+    padding: 80px auto 0;
+  }
+  .about {
+    > div {
+      padding: 50px 0 0;
+      width: 100%;
+      div.column-7 {
+        display: block;
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+        div.skill {
+          div {
+            width: 100%;
+          }
+          p {
+            width: 85%;
+          }
+          i {
+            width: 10%;
+            text-align: right;
+            margin: 0;
+          }
+        }
+      }
+      div.column-2 {
+        display: block;
+        width: 100%;
+        a.switcher {
+          display: none;
+        }
+      }
+    }
+  }
+  .row.contact {
+    padding: 50px 0;
+    form {
+      width: 100%;
+      div {
+        width: 100%;
+        margin: 10px 0;
+        input {
+          width: 100%;
+          font-size: 1.2em;
+          padding: 0px 0px;
+        }
+      }
+      textarea {
+        margin: 10px auto;
+        width: 100%;
+        overflow: hidden;
+        padding: 0 0 0 0;
+        height: 200px;
+        font-size: 1.5em;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 15px 0px;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 10px auto;
+      }
+    }
+  }
+  .row.offer {
+    > div {
+      width: 100%;
+      display: block;
+      div.buttons {
+        text-align: center;
+        width: 100%;
+        padding: 0 0;
+        a.btn {
+        }
+      }
+
+    }
+    div.content {
+      width: 90%;
+      margin: 0px auto;
+    }
+  }
+  .row.project {
+    margin: 80px auto 0 auto;
+    > div {
+      border: none;
+      width: 100%;
+    }
+    aside {
+      display: none;
+    }
+  }
+  footer.row {
+    padding: 10px 0;
+    margin: 10px auto;
+  }
+}
+@media only screen and (min-width : 441px) and (max-width: 570px) {
  section {
     margin: 50px auto 0 auto;
     .col {
@@ -134,19 +273,20 @@ div.buttons {
     z-index: 9999;
     height: 50px; 
     img.logo {
-      display: none;
+      width: 35px;
+      display: inline-block;
+      margin: 10px 0 0 0;
     }    
     .navigation {
-      margin: 10px 10px 0px 10px;
+      margin: 15px 0px 0px 10%;
+      display: inline-block;
       li {
-        &:first-child {
-          display: none;
-        }
+        margin: 0 10px 0 10px;
         .active {
           border-bottom: 3px solid #333;
         }
         a {
-          padding: 0px 5px 5px 5px;
+          padding: 0px 4px 10px 4px;
           font-weight: 800;
           &:hover {
             border-bottom: 3px solid #333;
@@ -173,15 +313,303 @@ div.buttons {
         text-align: center;
         div.skill {
           div {
-            width: 90%;
+            width: 100%;
           }
           p {
-            width: 75%;
+            width: 89%;
+            font-size: 1.3em;
           }
           i {
-            width: 15%;
-            text-align: center;
+            width: 10%;
+            text-align: right;
             margin: 0;
+            font-size: 1.3em;
+          }
+        }
+      }
+      div.column-2 {
+        display: block;
+        width: 100%;
+        a.switcher {
+          display: none;
+        }
+      }
+    }
+  }
+  .row.contact {
+    form {
+      width: 100%;
+      div {
+        width: 100%;
+        margin: 10px 0;
+        input {
+          width: 100%;
+          font-size: 1.2em;
+          padding: 0px 0px;
+        }
+      }
+      textarea {
+        margin: 10px auto;
+        width: 100%;
+        padding: 0 0 0 0;
+        height: 200px;
+        font-size: 1.5em;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 15px 0px;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 10px auto;
+      }
+    }
+  }
+  .row.offer {
+    > div {
+      width: 100%;
+      display: block;
+      div.buttons {
+        text-align: center;
+        width: 45%;
+        padding: 0 0;
+        a.btn {
+        }
+      }
+
+    }
+    div.content {
+      width: 90%;
+      margin: 0px auto;
+    }
+  }
+  .row.project {
+    margin: 80px auto 0 auto;
+    > div {
+      border: none;
+      width: 100%;
+    }
+    aside {
+      display: none;
+    }
+  }
+  footer.row {
+    margin: 0px auto;
+    padding: 10px 0;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 561px) and (max-width: 768px) {
+   section {
+    margin: 50px auto 0 auto;
+    .col {
+      width: 50%;
+      margin: 2px auto;
+    }
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 50px; 
+    img.logo {
+      width: 35px;
+      display: inline-block;
+      margin: 10px 0 0 5%;
+    }    
+    .navigation {
+      margin: 15px 15px 0px 15px;
+      display: inline-block;
+      li {
+        .active {
+          border-bottom: 3px solid #333;
+        }
+        a {
+          padding: 0px 10px 10px 10px;
+          font-weight: 800;
+          &:hover {
+            border-bottom: 3px solid #333;
+          }
+        }
+      }
+    }
+    .social {
+      margin-left: 0px;
+      float: right;
+      li {
+        a {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .row {
+    width: 95%;
+    margin: 80px auto 0;
+  }
+  .about {
+    > div {
+      padding: 0 0;
+      width: 100%;
+      div.column-7 {
+        display: block;
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+        div.skill {
+          div {
+            width: 100%;
+          }
+          p {
+            width: 89%;
+            font-size: 1.3em;
+          }
+          i {
+            width: 10%;
+            text-align: right;
+            margin: 0;
+            font-size: 1.3em;
+          }
+        }
+      }
+      div.column-2 {
+        display: block;
+        width: 100%;
+        a.switcher {
+          display: none;
+        }
+      }
+    }
+  }
+  .row.contact {
+    form {
+      width: 100%;
+      div {
+        width: 100%;
+        margin: 10px 0;
+        input {
+          width: 100%;
+          font-size: 1.2em;
+          padding: 2px 5px;
+        }
+      }
+      textarea {
+        margin: 10px auto;
+        width: 100%;
+        padding: 0 0 0 0;
+        height: 200px;
+        font-size: 1.5em;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 15px 0px;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 10px auto;
+      }
+    }
+  }
+  .row.offer {
+    > div {
+      width: 100%;
+      display: block;
+      div.buttons {
+        text-align: center;
+        width: 45%;
+        padding: 0 0;
+        a.btn {
+        }
+      }
+
+    }
+    div.content {
+      width: 90%;
+      margin: 0px auto;
+    }
+  }
+  .row.project {
+    margin: 80px auto 0 auto;
+    > div {
+      border: none;
+      width: 100%;
+    }
+    aside {
+      display: none;
+    }
+  }
+  footer.row {
+    margin: 0px auto;
+    padding: 10px 0;
+  }
+  
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+   section {
+    margin: 50px auto 0 auto;
+    .col {
+      width: 50%;
+      margin: 2px auto;
+    }
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 50px;   
+    .navigation {
+      margin: 15px 15px 0px 15px;
+      display: inline-block;
+      li {
+        .active {
+          border-bottom: 3px solid #333;
+        }
+        a {
+          padding: 0px 10px 10px 10px;
+          font-weight: 800;
+          &:hover {
+            border-bottom: 3px solid #333;
+          }
+        }
+      }
+    }
+    .social {
+      margin-left: 0px;
+      float: right;
+    }
+  }
+  .row {
+    width: 95%;
+    margin: 80px auto 0;
+  }
+  .about {
+    > div {
+      padding: 0 0;
+      width: 100%;
+      div.column-7 {
+        display: block;
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+        div.skill {
+          div {
+            width: 100%;
+          }
+          p {
+            width: 89%;
+            font-size: 1.3em;
+          }
+          i {
+            width: 10%;
+            text-align: right;
+            margin: 0;
+            font-size: 1.3em;
           }
         }
       }
@@ -221,7 +649,7 @@ div.buttons {
       display: block;
       div.buttons {
         text-align: center;
-        width: 100%;
+        width: 45%;
         padding: 0 0;
         a.btn {
         }
@@ -237,7 +665,7 @@ div.buttons {
     margin: 80px auto 0 auto;
     > div {
       border: none;
-      width: 90%;
+      width: 100%;
     }
     aside {
       display: none;
@@ -249,28 +677,116 @@ div.buttons {
   }
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-
-}
-
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width : 992px) and (max-width: 1240px) {
 
 
+  section {
+    margin: 50px auto 0 auto;
+    .col {
+      width: 33%;
+      margin: 2px auto;
+    }
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 50px;    
+    .navigation {
+      margin: 15px 15px 0px 15px;
+      display: inline-block;
+      li {
+        .active {
+          border-bottom: 3px solid #333;
+        }
+        a {
+          padding: 0px 10px 10px 10px;
+          font-weight: 800;
+          &:hover {
+            border-bottom: 3px solid #333;
+          }
+        }
+      }
+    }
+    .social {
+      margin-left: 0px;
+      float: right;
+    }
+  }
+  > .row {
+    margin: 80px auto 0;
+  }
+  .about {
+    margin-top: 80px;
+    > div {
+      padding: 0 0;
+      width: 100%;
+      div.column-7 {
+        display: block;
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+        div.skill {
+          div {
+            width: 100%;
+          }
+          p {
+            width: 89%;
+            font-size: 1.3em;
+          }
+          i {
+            width: 10%;
+            text-align: right;
+            margin: 0;
+            font-size: 1.3em;
+          }
+        }
+      }
+      div.column-2 {
+        display: block;
+        width: 100%;
+        a.switcher {
+          display: none;
+        }
+      }
+    }
+  }
+  .row.offer {
+    > div {
+      width: 40%;
+      display: inline-block;
+      div.buttons {
+        text-align: center;
+        width: 45%;
+        padding: 0 0;
+        a.btn {
+        }
+      }
+
+    }
+    div.content {
+      width: 55%;
+      margin: 0px auto;
+    }
+  }
+  .row.contact {
+    margin-top: 80px;
+  }
+  .row.project {
+    margin: 50px auto 0 auto;
+    .sticky {
+      position: fixed;
+      top: 50px;
+      right: 0;
+    }
+  }
+  footer.row {
+    padding: 10px 0 0 0;
+    margin: 10px auto;
+  }
 }
 
 

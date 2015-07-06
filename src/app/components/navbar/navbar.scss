@@ -35,18 +35,21 @@
 					font-size: 1.5em;
 				}
 			}
-			li:hover {
-				a {
-					color: #ccc;
-				}
-			}
 		}
 	}
 	.navigation {
 		margin-left: 25%;
+		li {
+			a {
+				&:hover {
+			  		color: #000 !important;
+					font-weight: 800 !important;
+				}
+			}
+		}
 	}
 	.social {
-		margin-left: 10%;
+		float: right;
 		li:nth-child(1) {
 			a {
 				&:hover {
