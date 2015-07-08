@@ -6,22 +6,27 @@
 
 .navbar {
   position: relative;
-  max-height: 50px;
+  min-height: 50px;
+  max-height: 80px;
   background-color: #eee;
   color: #333;
   margin-bottom: 2px;
   z-index: 999;
   @include box-shadow(0px 2px 10px 5px, rgba(0,0,0,.3));
 	.logo {
-		margin-left: 30px;
-		width: 50px;
+		margin: 15px 0px 15px 20px;
+		width: 40px;
+		height: 30px;
 		display: inline-block;
 		vertical-align: bottom;
+		background: url('../assets/images/marged.png');
+		background-position: -147px -10px;
+
 	}
 	ul {
 		display: inline-block;
 		vertical-align: top;
-		margin-top: 15px;
+		margin-top: 20px;
 		li {
 			display: inline-block;
 			position: relative;
@@ -31,6 +36,7 @@
 				color: #4f4f4f;
 				padding: 15px;
 				line-height: 20px;
+				cursor: pointer;
 				i {
 					font-size: 1.5em;
 				}

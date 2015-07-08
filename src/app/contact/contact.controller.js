@@ -9,6 +9,7 @@
 		var close = document.querySelectorAll('.close'),
 			number = document.querySelector('input[type="tel"]');
 
+
 		number.addEventListener('blur', function() {
 			if (number.value.length !== 0) {
 				number.value.replace(/\D[^\.]/g, "");

@@ -6,7 +6,7 @@
     .controller('AboutController', AboutController);
 
     function AboutController() {
-       
+      
       function skillBarsAnimation() {
         for (var i=0; i < skill.length; i++) {
           var percent = skill[i].querySelector('i').getAttribute('data-percent');
@@ -26,7 +26,9 @@
       setTimeout(skillBarsAnimation, 500)
       
       var switcherValue = false;    
-    	document.querySelector('.switcher').addEventListener('click', function(){
+    	var switcherNode = document.getElementById('switcher')
+
+      switcherNode.addEventListener('click', function(){
 
     		switcherValue = !switcherValue;
 	    	
@@ -35,6 +37,7 @@
           resetSkillBarAnimation();
 
 	    		document.querySelector('body').classList.add("black");
+          switcherNode.classList.remove('off');
 	    	
         } else {
 
@@ -42,7 +45,7 @@
   	      
       		document.querySelector('body').classList.remove("black");          
           document.querySelector('body').classList.add("white");
-   		
+   		     switcherNode.classList.add('off');
 	    	}
 
     	})

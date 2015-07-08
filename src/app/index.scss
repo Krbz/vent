@@ -44,6 +44,7 @@ body {
   margin: 0;
   line-height: 1.3em;
   font-family: 'Raleway', sans-serif;
+  position: relative;
   .container {
     section {
       text-align: center;
@@ -66,20 +67,6 @@ body {
   div {
     text-align: left;
   }
-}
-
-.white {
-  background: rgba(255,255,255,.5);
-  color: #222;
-  transition: 1s background linear;
-  transition: 2s color linear;
-
-}
-.black {
-  background: rgba(0,0,0,.8);
-  color: #fff;  
-  transition: 1s background linear;
-  transition: 1s color linear;
 }
 
 .error {
@@ -105,6 +92,7 @@ div.buttons {
   background: #fda;
   padding: 10px 35px;
   color: #fff;
+  box-shadow: 4px 4px 4px #ccc;
   }
 }
 .navbar ul li a.active {
@@ -112,13 +100,21 @@ div.buttons {
   font-weight: 800 !important;
   border-bottom: 3px solid #333;
 }
+.container footer.row {
+  padding: 0px 0px 0px 0px;
+}
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
    all your sass files automatically */
 // injector
 // endinjector
 
-/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 220px) and (max-width: 320px) {
+
+}
 @media only screen and (min-width : 320px) and (max-width: 440px) {
+.aboutBG {
+  display: none;
+}
 section {
     margin: 50px auto 0 auto;
     .col {
@@ -133,7 +129,8 @@ section {
     left: 0;
     z-index: 9999;
     height: 50px; 
-    img.logo {
+    a.logo {
+      margin: 15px 0px 15px 0px;
       width: 35px;
       display: inline-block;
       margin: 10px 0 0 0;
@@ -188,7 +185,7 @@ section {
       div.column-2 {
         display: block;
         width: 100%;
-        a.switcher {
+        a#switcher {
           display: none;
         }
       }
@@ -222,6 +219,9 @@ section {
         font-size: 1.5em;
         margin: 10px auto;
       }
+    }
+    img.formImg {
+      display: none;
     }
   }
   .row.offer {
@@ -258,6 +258,9 @@ section {
   }
 }
 @media only screen and (min-width : 441px) and (max-width: 570px) {
+.aboutBG {
+  display: none;
+}
  section {
     margin: 50px auto 0 auto;
     .col {
@@ -272,13 +275,13 @@ section {
     left: 0;
     z-index: 9999;
     height: 50px; 
-    img.logo {
+    a.logo {
       width: 35px;
       display: inline-block;
       margin: 10px 0 0 0;
     }    
     .navigation {
-      margin: 15px 0px 0px 10%;
+      margin: 15px 0px 0px 9%;
       display: inline-block;
       li {
         margin: 0 10px 0 10px;
@@ -330,8 +333,9 @@ section {
       div.column-2 {
         display: block;
         width: 100%;
-        a.switcher {
-          display: none;
+        a#switcher {
+          left: 0;
+          bottom: 0;
         }
       }
     }
@@ -363,6 +367,9 @@ section {
         margin: 10px auto;
       }
     }
+    img.formImg {
+      display: none;
+    }
   }
   .row.offer {
     > div {
@@ -372,8 +379,6 @@ section {
         text-align: center;
         width: 45%;
         padding: 0 0;
-        a.btn {
-        }
       }
 
     }
@@ -400,7 +405,16 @@ section {
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 561px) and (max-width: 768px) {
+.aboutBG {
+  background-position: 300px bottom;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  z-index: -10;
+  min-height: 100%;
+}
    section {
+    overflow: hidden;
     margin: 50px auto 0 auto;
     .col {
       width: 50%;
@@ -414,13 +428,13 @@ section {
     left: 0;
     z-index: 9999;
     height: 50px; 
-    img.logo {
+    a.logo {
       width: 35px;
       display: inline-block;
       margin: 10px 0 0 5%;
     }    
     .navigation {
-      margin: 15px 15px 0px 15px;
+      margin: 15px 15px 0px 10px;
       display: inline-block;
       li {
         .active {
@@ -440,7 +454,7 @@ section {
       float: right;
       li {
         a {
-          padding: 10px;
+          padding: 5px;
         }
       }
     }
@@ -477,17 +491,18 @@ section {
       div.column-2 {
         display: block;
         width: 100%;
-        a.switcher {
-          display: none;
+        a#switcher {
+          left: 0;
+          bottom: 0;
         }
       }
     }
   }
   .row.contact {
     form {
-      width: 100%;
+      width: 95%;
       div {
-        width: 100%;
+        width: 98%;
         margin: 10px 0;
         input {
           width: 100%;
@@ -510,6 +525,9 @@ section {
         margin: 10px auto;
       }
     }
+    img.formImg {
+      display: none;
+    }
   }
   .row.offer {
     > div {
@@ -519,8 +537,6 @@ section {
         text-align: center;
         width: 45%;
         padding: 0 0;
-        a.btn {
-        }
       }
 
     }
@@ -549,7 +565,15 @@ section {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 768px) and (max-width : 992px) {
-   section {
+  .aboutBG {
+    background-position: 350px bottom;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    z-index: -10;
+    min-height: 100%;
+  }
+  section {
     margin: 50px auto 0 auto;
     .col {
       width: 50%;
@@ -616,8 +640,9 @@ section {
       div.column-2 {
         display: block;
         width: 100%;
-        a.switcher {
-          display: none;
+        a#switcher {
+          left: 0;
+          bottom: 0;
         }
       }
     }
@@ -641,6 +666,15 @@ section {
         height: 200px;
         font-size: 2em;
       }
+      input[type="submit"] {
+        width: 92%;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 10px auto;
+      }
+    }
+    img.formImg {
+      display: none;
     }
   }
   .row.offer {
@@ -651,8 +685,6 @@ section {
         text-align: center;
         width: 45%;
         padding: 0 0;
-        a.btn {
-        }
       }
 
     }
@@ -679,9 +711,17 @@ section {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 992px) and (max-width: 1240px) {
-
+.aboutBG {
+  background-position: 500px bottom;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  z-index: -10;
+  min-height: 100%;
+}
 
   section {
+    overflow: hidden;
     margin: 50px auto 0 auto;
     .col {
       width: 33%;
@@ -748,8 +788,9 @@ section {
       div.column-2 {
         display: block;
         width: 100%;
-        a.switcher {
-          display: none;
+        a#switcher {
+          left: 0;
+          bottom: 0;
         }
       }
     }
@@ -788,7 +829,6 @@ section {
     margin: 10px auto;
   }
 }
-
 
 
 
