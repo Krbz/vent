@@ -3,11 +3,18 @@
 	right: 0;
 	height: 100%;
 	background: #e0e5e7;
-	position: absolute;
+	position: fixed;
 	z-index: -10;
+}
+.offerBG_img {
+	left: 0;
+	right: 0;
+	height: 100%;
+	position: absolute;
+	z-index: -9;
 	background-image: url('../assets/images/5.png');
 	background-repeat: no-repeat;
-	background-size: 100% 50%;
+	background-size: 100% 60%;
 	background-position: left bottom;
 }
 .row.offer {

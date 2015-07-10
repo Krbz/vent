@@ -9,16 +9,8 @@
   function project() {
     var directive = {
       restrict: 'A',
-      templateUrl: 'app/components/portfolio/portfolio.html',
-      controller: portfolio,
-      controllerAs: 'self',
-      bindToController: true
+      templateUrl: 'app/components/portfolio/portfolio.html'
     };
-
     return directive;
   }
-  function portfolio() {
-
-  }
-
 })();

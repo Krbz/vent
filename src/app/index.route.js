@@ -12,8 +12,14 @@
       requireBase: false
     });
     $stateProvider
-      .state('home', {
+      .state('welcome', {
         url: '/',
+        templateUrl: 'app/welcome/welcome.html',
+        controller: 'welcomeController',
+        controllerAs: 'welcome'        
+      })
+      .state('home', {
+        url: '/projects',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'

@@ -20,7 +20,6 @@
       } else {
         aside.classList.add('sticky');
       }
-
     });
 
     return mainData;
